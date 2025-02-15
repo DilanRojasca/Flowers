@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Para Ti 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contenedor-mensaje {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        .boton-flores {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 2rem;
+        }
+
+        .boton-flores:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+        }
+
+        .mensaje-inicial {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg,
+                    #ff0000, #ff8000, #ffff00,
+                    #00ff00, #00ffff, #0000ff,
+                    #8000ff, #ff0080);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: arcoiris 8s linear infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes arcoiris {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-mensaje">
+        <div class="mensaje-inicial">Para la persona más especial 🌹</div>
+        <button class="boton-flores" onclick="window.location.href='flores.html'">
+            Ver tu sorpresa 🌸
+        </button>
+    </div>
+</body>
+
+</html>
